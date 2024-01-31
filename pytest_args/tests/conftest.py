@@ -9,10 +9,10 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture
-def actual(request):
+def url(request):
     return request.config.getoption("--actual")
 
 
 @pytest.fixture
-def expected(request):
+def status_code(request):
     return request.config.getoption("--expected")
